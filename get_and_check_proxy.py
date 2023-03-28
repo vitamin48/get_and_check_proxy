@@ -40,7 +40,7 @@ class CheckProxy:
                 print(f'{proxy} -')
 
     def check_proxy_from_list(self, proxies=''):
-        """Проверка прокси из очереди"""
+        """Проверка прокси из списка"""
         # for proxy in proxies:
         proxy = '103.150.40.231:8080'
         res = requests.get('https://ipinfo.io/json', proxies={'http': proxy})
